@@ -2,6 +2,8 @@
 
 body {
 	font-family: 'Roboto Mono', monospace;
+	margin: 0;
+	height: 100%;
 }
 
 /* Nav Bar */
@@ -30,68 +32,68 @@ nav {
 	color: ForestGreen;
 }
 
-/* Main page */
+/* Main page settings */
 
-.webdesign-mainpage {
-	min-height: 984px;
-	margin-bottom: 15px;
-}
-
-.webdesign-mainpage img {
+.wrap {
 	width: 100%;
-	position: absolute;
-	left: 0;
-	right: 0;
+	margin:auto;
+	position:relative;
 }
 
-.webdesign-mainpage h2 {
-	color: white;
-	position: relative;
-	left: 50px;
-	top: 50px;
+.wrap img {
+	width:100%;
+	height:auto;
+	border:none;
 }
 
-.webdesign-mainpage h3 {
-	color: white;
-	display: inline;
-	position: relative;
-	margin: 15px;
-	left: 75px;
-	top: 75px;
+.caption {
+	position:absolute;
+	top:5px;
+	left:0;
+	right:0;
+	bottom:10px;
+	overflow:auto;
 }
 
-.seo-mainpage img {
-	width: 100%;
-	margin-bottom: 5px;
-	position: absolute;
-	left: 0;
-	right: 0;
+.caption-inner {
+	display:table;
+	width:100%;
+	height:100%;
 }
 
-.seo-mainpage h2 {
-	color: black;
-	position: relative;
-	left: 50px;
-	top: 550px;
+.caption-content {
+	display:table-cell;
+	vertical-align:middle;
 }
 
-.seo-mainpage h3 {
-	color: black;
-	display: inline;
-	position: relative;
-	margin: 15px;
-	left: 75px;
-	top: 575px;
+.caption-content h2, h3, button {
+	margin:0 50px;
+	background:rgba(255,255,255,0.4);
+	padding:10px;
 }
 
-.sea-mainpage {
-	width: 100%;
-	min-height: 1000px;
-	background-color: blue;
-	margin-bottom: 5px;
+.caption-content button {
+	border: none;
+  	outline: 0;
+  	display: inline-block;
+  	padding: 10px 25px;
+  	color: black;
+  	background-color: #ddd;
+  	text-align: center;
+  	cursor: pointer;
 }
 
-.sea-mainpage h3 {
-	display: inline;
-	margin: 15px;
+.caption-content button:hover {
+	background-color: #555;
+  	color: white;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+
+	.caption-content h2, h3, button {
+		font-size: 0.7em;
+	}
+
 }
