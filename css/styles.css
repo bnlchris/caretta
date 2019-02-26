@@ -14,14 +14,15 @@ nav {
 
 .menu-line {
 	text-align: right;
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .menu-line h3 {
 	display: inline;
 	margin: 10px;
 	cursor: pointer;
+	padding: 5px;
 }
 
 .menu-line h3:hover {
@@ -64,12 +65,17 @@ nav {
 
 .caption-content {
 	display:table-cell;
-	vertical-align:middle;
+	vertical-align:bottom;
+}
+
+.caption-content {
+	display:table-cell;
+	vertical-align:bottom;
 }
 
 .caption-content h2, h3, button {
 	margin:0 50px;
-	background:rgba(255,255,255,0.4);
+	background:rgba(255,255,255,0.85);
 	padding:10px;
 }
 
