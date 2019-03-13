@@ -18,6 +18,12 @@
 </head>
 
 <body>
+
+	<?php 
+	/* Short and sweet */
+	define('WP_USE_THEMES', false);
+	require('./wp-blog-header.php');
+	?>
 	
 	<nav>
 		
@@ -40,10 +46,14 @@
 	</nav>
 
 	<div class="wrap">
-		<img src="img/webdesign_in_kiel_desktop.jpg" title="Erstklassiges Webdesign aus Kiel" alt="Niedlicher Kopf eines Schildkrötenbabys">
+		<img srcset="img/webdesign_in_kiel_mobil.jpg 400w,
+		img/webdesign_in_kiel_tablet.jpg 1024w,
+		img/webdesign_in_kiel_desktop.jpg 2000w"
+		sizes="(max-width: 410px) 400px,
+  		(max-width: 1100px) 1024px" title="Erstklassiges Webdesign aus Kiel" alt="Niedlicher Kopf eines Schildkrötenbabys">
 		<div class="caption">
 			<div class="caption-inner">
-				<div class="caption-content">
+				<div class="caption-content" id="webdesign">
 					<h2>Erstklassiges Webdesign aus Kiel</h2>
 					<h3>Responsiv</h3>
 					<h3>Barrierefrei</h3>
@@ -57,7 +67,11 @@
 	</div>
 
 	<div class="wrap">
-		<img src="img/SEO_in_Kiel_desktop.jpg" title="Suchmaschinen-Optimierung: So findet man Sie bei Google" alt="Einfache Grafik über Suchmaschinen-Optimierung">
+		<img srcset="img/SEO_in_Kiel_mobil.jpg 400w,
+		img/SEO_in_Kiel_tablet.jpg 1024w,
+		img/SEO_in_Kiel_desktop.jpg 2000w"
+		sizes="(max-width: 410px) 400px,
+  		(max-width: 1100px) 1024px" title="Suchmaschinen-Optimierung: So findet man Sie bei Google" alt="Einfache Grafik über Suchmaschinen-Optimierung">
 		<div class="caption">
 			<div class="caption-inner">
 				<div class="caption-content">
@@ -92,5 +106,47 @@
 			
 		</div>
 	</div>
+
+	<div class="wrap">
+		<img srcset="img/social-media-marketing-in-kiel_mobil.jpg 400w,
+		img/social-media-marketing-in-kiel_tablet.jpg 1024w,
+		img/social-media-marketing-in-kiel_desktop.jpg 2000w"
+		sizes="(max-width: 410px) 400px,
+  		(max-width: 1100px) 1024px" title="Marketing in den sozialen Medien" alt="Blick auf Smartphone mit einigen Apps">
+		<div class="caption">
+			<div class="caption-inner">
+				<div class="caption-content">
+					<h2>Social-Media-Marketing: Mehr Kunden bei Facebook & Co. erreichen</h2>
+					<h3>Die richtige Zielgruppe</h3>
+					<h3>Der passende Inhalt</h3>
+					<h3>Auswertung in Echtzeit</h3>	
+					<button>Mehr über Social-Media-Marketing</button>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="blog">
+		<h2>Aktuelles aus unserem Blog</h2>
+	</div>
+
+	<footer>
+		<div class="column">
+			<h2>Impressum</h2>
+		</div>
+		<div class="column">
+			<h2>Kontakt</h2>
+		</div>
+		<div class="column">
+			<h2>Datenschutz</h2>
+		</div>
+	</footer>
+
+	
+
+	<!-- embed JavaScript -->
+	<script src="js/app.js"></script>
 
 </body>

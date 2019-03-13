@@ -65,7 +65,7 @@ nav {
 
 .caption-content {
 	display:table-cell;
-	vertical-align:bottom;
+	vertical-align:middle;
 }
 
 .caption-content h2, h3, button {
@@ -90,12 +90,56 @@ nav {
   	color: white;
 }
 
+/* Blog settings */
+
+.blog {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/* Footer settings */
+
+footer {
+	width: 100%;
+	background: black;
+	display: flex;
+}
+
+.column {
+	flex: 50%;
+	padding: 10px;
+	text-align: center;
+}
+
+.column h2 {
+	color: white;
+	cursor: pointer;
+}
+
+.column h2:hover {
+	color: white;
+	color: ForestGreen;
+}
+
+.column h2:focus {
+	color: white;
+	color: ForestGreen;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 600px) {
 
 	.caption-content h2, h3, button {
 		font-size: 0.7em;
+	}
+
+	.column h2 {
+		font-size: 0.8em;
+	}
+
+	.blog h2 {
+		font-size: 0.85em;
 	}
 
 }
